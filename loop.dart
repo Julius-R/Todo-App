@@ -28,6 +28,9 @@ class Loop {
           this.todoList.editTodo(editType: 'toggleCompleted');
           break;
         case 4:
+          this.todoList.editTodo(editType: 'delete');
+          break;
+        case 5:
           this.stop();
       }
     }
@@ -36,7 +39,7 @@ class Loop {
   int selectOption() {
     var response = getUserInput(msg: '''
     Please Select From the Following Options:
-    [1] Add Todo [2] View Todos [3] Mark Todo Complete [4] Exit
+    [1] Add Todo [2] View Todos [3] Mark Todo Complete [4] Delete Todo [5] Exit
 ''', field: 'Response', valType: 'int');
 
     return response;
