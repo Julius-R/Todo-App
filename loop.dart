@@ -7,8 +7,9 @@ class Loop {
   final options = {
     1: 'Add Todo',
     2: 'View Todo',
-    3: 'Mark Todo Complete',
-    4: 'Exit'
+    3: 'Delete Todo',
+    4: 'Mark Todo Complete',
+    5: 'Exit'
   };
 
   Loop(this.todoList);
